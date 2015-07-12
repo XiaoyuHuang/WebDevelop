@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	font: bold 14px Arial, sans-serif;
+}
+
+html {
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #fff 20%, #ccc);
+	background-size: cover;
+}
+
+#calculator {
+	width:325px;
+	height:auto;
+
+	margin: 100px auto;
+	padding: 20px 20px 9px;
+}
+
+.top span.clear {
+	float: left;
+}
+
+.top .screen {
+	height: 40px;
+	width: 264px;
+	
+	float: left;
+	
+	padding: 0 10px;
+	
+	background: #b6a480;
+
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+.keys, .top {overflow: hidden;}
+
+
+.keys span, .top span.clear, .key span.mod {
+	float: left;
+	position: relative;
+	top: 0;
+	
+	cursor: pointer;
+	border-width: 1px;
+    border-color: #b6a480;
+    border-style: solid;
+   
+	
+	width: 66px;
+	height: 36px;
+	
+	background: #e5e2db;
+	
+	color: #888;
+	line-height: 36px;
+	text-align: center;
+	
+	user-select: none;
+	
+	transition: all 0.2s ease;
+}
+
+.keys span.zero {
+	float: left;
+	position: relative;
+	top: 0;
+	
+	cursor: pointer;
+	border-width: 1px;
+    border-color: #b6a480;
+    border-style: solid;
+    
+	
+	width: 132px;
+	height: 36px;
+	
+	background: #e5e2db;
+	
+	color: #888;
+	line-height: 36px;
+	text-align: center;
+	
+	user-select: none;
+	
+	transition: all 0.2s ease;
+}
+
+
+
+.keys span.operator {
+	background: #F0A20E;
+	margin-right: 0;
+}
+
+
+.keys span.eval {
+	background: #F0A20E;
+	color: #888e5f;
+}
+
+.top span.clear {
+	background: #d2d0cb;
+	color: white;
+}
+
+
+.keys span:hover {
+	background: #d2d0cb;
+	color: white;
+}
+
+.keys span.eval:hover {
+	background: #d2d0cb;
+	color: white;
+}
+
+.top span.clear:hover {
+	background: #d2d0cb;
+	color: white;
+}
+
+
+.keys span:active {
+	top: 4px;
+}
+
+.keys span.eval:active {
+	top: 4px;
+}
+
+.top span.clear:active {
+	top: 4px;
+}
